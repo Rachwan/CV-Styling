@@ -1,0 +1,168 @@
+body {
+    font-family: 'Arimo', sans-serif;
+    position: relative;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: gray;
+}
+
+header div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 150px;
+    margin-right: 100px;
+    height: 180px;
+}
+
+header hgroup {
+    color: red;
+}
+
+/* Contact */
+#contact {
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+
+#contact h3 {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contacts dl {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.contact dt {
+    flex: 1;
+    background-color: red;
+    color: white ;
+    width: 300px;
+    padding: 5px;
+
+}
+
+.contact dd {
+    flex: 2;
+    background-color: black;
+    color: red;
+    margin-left: 0px;
+    width: 90%;
+    padding: 5px 500px 5px 5px;
+}
+
+.contact dd a {
+    text-decoration: none !important;
+    color: red;
+}
+
+/* Content */
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.content h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.content h3::before {
+    content: " ";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 5px;
+}
+
+/* About */
+.content #about p {
+    padding-right: 50px;
+}
+
+/* Competencies */
+#competencies .skills .skill {
+    background-color: rgb(220, 220, 220);
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+#competencies .skills .skill span {
+    display: block;
+    color: white;
+    background-color: red;
+    padding: 5px;
+
+}
+
+/* skills-primary */
+#competencies .skills-primary .skill:nth-child(1) span {
+    width: 50%;
+}
+#competencies .skills-primary .skill:nth-child(2) span {
+    width: 30%;
+}
+#competencies .skills-primary .skill:nth-child(3) span {
+    width: 8%;
+}
+
+/* skills-secondary */
+#competencies .skills-secondary .skill:nth-child(1) span {
+    width: 90%;
+}
+#competencies .skills-secondary .skill:nth-child(2) span {
+    width: 50%;
+}
+#competencies .skills-secondary .skill:nth-child(3) span {
+    width: 60%;
+}
+#competencies .skills-secondary {
+    opacity: .6;
+}
+
+section h4 {
+    font-size: 20px;
+    color: red;
+}
+section h4 .experience-institution {
+    font-weight: normal;
+}
+section h4 .experience-institution::before {
+    content: "@ ";
+}
+section .experience-details {
+    margin-left: 10px;
+    margin-top: -25px;
+} 
+section .experience-location, section .day, section .month, section .year {
+    font-size: 18px;
+    opacity: .5;
+}
+section .experience-details::before {
+    content: "In ";
+    font-size: 18px;
+    opacity: .5;
+} 
+section .experience-date-separator {
+    color: red;
+    font-weight: bold;
+}
